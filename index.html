@@ -1,27 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meetup</title>
-    <link rel="stylesheet" href="/src/styles/main.scss">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header__container">header</div>
-      </header>
-      <main class="page">
-        <div class="page__hero hero">
-          <div class="hero__container">
-            Page
-          </div>
-        </div>
-      </main>
-      <footer class="footer">
-        <div class="footer__container">footer</div>
-      </footer>
-    </div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Meetup</title>
+		<link rel="stylesheet" href="/src/styles/main.scss" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<a class="header__logo" href="">
+						<img src="/src/assets/icons/logo.svg" alt="logo" />
+					</a>
+
+					<div class="header__search search">
+						<form action="#" class="search__form">
+							<div class="search__group search__group--search">
+								<label for="search-input">
+									<img src="/src/assets/icons/lens.svg" alt="search" />
+								</label>
+								<input
+									type="text"
+									id="search-input"
+									class="search__input"
+									placeholder="Search events"
+								/>
+							</div>
+							<div class="search__group search__group--region">
+								<select id="region-select" class="search__select">
+									<option value="">Mountain View, CA</option>
+									<option value="region1">Region 1</option>
+									<option value="region2">Region 2</option>
+									<option value="region3">Region 3</option>
+								</select>
+							</div>
+							<button type="submit" class="search__button">
+								<img src="/src/assets/icons/lens-white.svg" alt="search" />
+							</button>
+						</form>
+					</div>
+
+					<div class="header__options">
+						<div class="header__language language-selector">
+							<label for="language-selector">
+								<img src="/src/assets/icons/planet.svg" alt="planet">
+							</label>
+							<select id="language-selector" class="language-selector__dropdown">
+								<option value="en">English</option>
+								<option value="de">Deutsch</option>
+								<option value="fr">Russian</option>
+							</select>
+						</div>
+						<div class="header__auth auth">
+							<a href="#" class="auth__login">Log in</a>
+							<a href="#" class="auth__signup">Sign up</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<div class="page__hero hero">
+					<div class="hero__container">Page</div>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">footer</div>
+			</footer>
+		</div>
+		<script type="module" src="/src/js/main.js"></script>
+	</body>
 </html>

@@ -5,6 +5,8 @@ $secondary-color: #E32359;
 $text-color: #212121;
 $button-color: #00798A;
 $background-color: #fff;
+$border-color: #d9d9d9;
+$orange-button-color: #f65858;
 
 // Размеры шрифтов
 $font-small: 14px;
@@ -12,6 +14,15 @@ $font-medium: 16px;
 $font-large: 24px;
 $h2: 36px;
 $h1: 42px;
+
+// z-index
+$ui-index-1: 1; //Для наползающих элементов в общем потоке
+$ui-index-2: 2; //Для наползающих элементов в общем потоке
+$ui-index-3: 3; //Для хедера
+$ui-index-4: 4; //Для масок
+$ui-index-5: 5; //Для сайдбаров
+$ui-index-6: 6; //Для модалок
+$ui-index-7: 7; //Для элементов, перекрывающих ВСЁ
 
 // Breakpoints
 $breakpoints: (

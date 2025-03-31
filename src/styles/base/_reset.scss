@@ -40,10 +40,11 @@ h6 {
 
 button,
 input,
-textarea {
+textarea, 
+select {
 	border: none;
 	outline: none;
-	background: none;
+	background: transparent;
 	font: inherit;
 }
 

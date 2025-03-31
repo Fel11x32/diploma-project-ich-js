@@ -1,13 +1,14 @@
 @use "sass:math";
+@use "sass:color";
 
 @function px-to-rem($px, $base-font-size: 16px) {
   @return #{math.div($px, $base-font-size)}rem;
 }
 
 @function lighten-color($color, $percentage) {
-  @return lighten($color, $percentage);
+  @return color.adjust($color, $lightness: $percentage);
 }
 
-@function darken-color($color, $percentage) {
-  @return darken($color, $percentage);
+@function darken-color($color, $percentage: 10%) {
+  @return color.adjust($color, $lightness: -$percentage);
 }

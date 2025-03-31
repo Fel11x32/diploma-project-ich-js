@@ -1,0 +1,68 @@
+@use '../utils' as *;
+
+.header {
+	position: sticky;
+	top: 0;
+	z-index: $ui-index-3;
+	background-color: $background-color;
+
+	&__container {
+		display: flex;
+		@include flex-center;
+		justify-content: space-between;
+		min-height: px-to-rem(64px);
+	}
+
+	&__logo {
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__search {
+	}
+
+	&__options {
+		@include flex-center;
+		gap: px-to-rem(21px);
+	}
+
+	&__language {
+	}
+
+	&__auth {
+		@include flex-center;
+	}
+}
+.language-selector {
+	@include flex-center;
+	gap: px-to-rem(4px);
+
+	&__dropdown {
+		cursor: pointer;
+		font-weight: 500;
+		font-size: $font-small;
+	}
+}
+.auth {
+	font-weight: 500;
+	font-size: $font-small;
+	gap: px-to-rem(22px);
+	line-height: px-to-rem(20px);
+	&__login {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__signup {
+		border-radius: px-to-rem(8px);
+		padding: px-to-rem(8px) px-to-rem(16px);
+		background: $button-color;
+		color: $background-color;
+		transition: background-color .3s ease;
+		&:hover {
+			background-color: darken-color($button-color);
+		}
+	}
+}
