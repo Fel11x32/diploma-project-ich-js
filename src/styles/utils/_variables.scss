@@ -1,0 +1,30 @@
+
+// Цвета
+$primary-color: #97CAD1;
+$secondary-color: #E32359;
+$text-color: #212121;
+$button-color: #00798A;
+$background-color: #fff;
+
+// Размеры шрифтов
+$font-small: 14px;
+$font-medium: 16px;
+$font-large: 24px;
+$h2: 36px;
+$h1: 42px;
+
+// Breakpoints
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px
+);
+
+// Отступы
+$spacing-unit: 8px;
+$padding: (
+  'small': $spacing-unit,
+  'medium': $spacing-unit * 2,
+  'large': $spacing-unit * 3
+);
