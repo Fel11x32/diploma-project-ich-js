@@ -6,6 +6,11 @@
 		border-radius: 8px;
 		overflow: hidden;
 		border: 1px solid $border-color;
+		transition: border-color 0.3s;
+
+		&:focus-within {
+			border-color: darken-color($button-color);
+		}
 	}
 
 	&__group {
@@ -15,6 +20,7 @@
 
 		&--search {
 			padding-left: px-to-rem(15px);
+
 			label {
 				cursor: pointer;
 			}
@@ -28,30 +34,37 @@
 	&__input,
 	&__select {
 		padding: px-to-rem(5px);
+		flex: 1 1 auto;
+		width: 100%;
 	}
 
 	&__input {
-		width: px-to-rem(300px);
+		max-width: px-to-rem(300px);
 	}
 
 	&__select {
 		cursor: pointer;
-		width: px-to-rem(180px);
+		max-width: px-to-rem(180px);
 	}
 
 	&__button {
 		background: $orange-button-color;
-		padding: px-to-rem(10px) px-to-rem(15px);
+		padding: px-to-rem(11px) px-to-rem(11px);
 		@include flex-center;
 		cursor: pointer;
 		transition: background-color 0.3s ease;
+
 		img {
-			transition: scale 0.3s ease;
+			flex-shrink: 0;
+			min-width: px-to-rem(24px);
+			transition: transform 0.3s ease;
 		}
+
 		&:hover {
 			background-color: darken-color($orange-button-color);
+
 			img {
-				scale: 1.4;
+				transform: scale(1.4);
 			}
 		}
 	}

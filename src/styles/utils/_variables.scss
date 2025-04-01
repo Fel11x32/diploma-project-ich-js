@@ -9,6 +9,7 @@ $border-color: #d9d9d9;
 $orange-button-color: #f65858;
 
 // Размеры шрифтов
+$font-ultra-small: 12px;
 $font-small: 14px;
 $font-medium: 16px;
 $font-large: 24px;
@@ -26,6 +27,7 @@ $ui-index-7: 7; //Для элементов, перекрывающих ВСЁ
 
 // Breakpoints
 $breakpoints: (
+  'xs': 423px,
   'sm': 576px,
   'md': 768px,
   'lg': 992px,
