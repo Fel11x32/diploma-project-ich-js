@@ -7,3 +7,15 @@ body {
 	font-size: px-to-rem(16px);
 	color: $text-color;
 }
+
+h1 {
+	font-size: $h1;
+	font-weight: 700;
+	line-height: lh-multiplier($h1, 52px);
+	@include responsive('md') {
+		font-size: $h2;
+	}
+	@include responsive('sm') {
+		font-size: $h1-resp;
+	}
+}

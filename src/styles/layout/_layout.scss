@@ -19,4 +19,10 @@ body {
 	max-width: 1276px;
 	padding-inline: 40px;
 	margin: 0 auto;
+	@include responsive('sm') {
+		padding-inline: 20px;
+	}
+}
+
+.page {
 }

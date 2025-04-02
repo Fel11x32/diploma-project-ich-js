@@ -1,0 +1,60 @@
+@use '../utils' as *;
+
+.hero {
+	padding-block: px-to-rem(98px);
+	@include responsive('md') {
+		padding-block: px-to-rem(56px);
+	}
+	@include responsive('sm') {
+		padding-block: px-to-rem(30px);
+	}
+	&__container {
+		display: flex;
+		align-items: center;
+		gap: px-to-rem(55px);
+		@include responsive('md') {
+			flex-direction: column;
+		}
+		@include responsive('sm') {
+			gap: px-to-rem(18px);
+		}
+	}
+
+	&__content {
+		max-width: px-to-rem(608px);
+	}
+
+	&__subtitle {
+		line-height: lh-multiplier($font-medium, 24px);
+		&:not(:first-child) {
+			margin-top: px-to-rem(25px);
+		}
+		@include responsive('sm') {
+			text-align: center;
+			font-size: $font-ultra-small;
+			line-height: lh-multiplier($font-ultra-small, 24px);
+		}
+	}
+
+	&__button-link {
+		font-size: $font-medium;
+		font-weight: 400;
+		line-height: lh-multiplier($font-medium, 24px);
+		&:not(:first-child) {
+			margin-top: px-to-rem(24px);
+		}
+		@include responsive('sm') {
+			display: block;
+			max-width: px-to-rem(125px);
+			margin: 0 auto;
+		}
+	}
+
+	&__img {
+		max-width: px-to-rem(380px);
+		width: 100%;
+		@include responsive('sm') {
+			max-width: px-to-rem(215px);
+		}
+	}
+}
