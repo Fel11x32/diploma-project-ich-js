@@ -44,9 +44,12 @@
 					<div class="header__options">
 						<div class="header__language language-selector">
 							<label for="language-selector">
-								<img src="/src/assets/icons/planet.svg" alt="planet">
+								<img src="/src/assets/icons/planet.svg" alt="planet" />
 							</label>
-							<select id="language-selector" class="language-selector__dropdown">
+							<select
+								id="language-selector"
+								class="language-selector__dropdown"
+							>
 								<option value="en">English</option>
 								<option value="de">Deutsch</option>
 								<option value="fr">Russian</option>
@@ -54,18 +57,202 @@
 						</div>
 						<div class="header__auth auth">
 							<a href="#" class="auth__login">Log in</a>
-							<a href="#" class="auth__signup">Sign up</a>
+							<a href="#" class="auth__signup blue-button">Sign up</a>
 						</div>
 					</div>
 				</div>
 			</header>
 			<main class="page">
-				<div class="page__hero hero">
+				<section class="page__hero hero">
 					<div class="hero__container">Page</div>
-				</div>
+				</section>
+				<section class="page__events events">
+					<div class="events__container">
+
+					</div>
+				</section>
 			</main>
 			<footer class="footer">
-				<div class="footer__container">footer</div>
+				<div class="footer__container">
+					<div class="footer__top">
+						<p class="footer__cta">Create your own Meetup group.</p>
+						<a href="#" class="footer__button-link"><span>Get Started</span></a>
+					</div>
+
+					<div class="footer__content">
+						<div class="footer__column">
+							<div class="footer__title">Your Account</div>
+							<ul class="footer__list">
+								<li><a href="#" class="footer__link">Sign up</a></li>
+								<li><a href="#" class="footer__link">Log in</a></li>
+								<li><a href="#" class="footer__link">Help</a></li>
+								<li>
+									<a href="#" class="footer__link">Become an Affiliate</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer__column">
+							<div class="footer__title">Discover</div>
+							<ul class="footer__list">
+								<li><a href="#" class="footer__link">Groups</a></li>
+								<li><a href="#" class="footer__link">Calendar</a></li>
+								<li><a href="#" class="footer__link">Topics</a></li>
+								<li><a href="#" class="footer__link">Cities</a></li>
+								<li><a href="#" class="footer__link">Online Events</a></li>
+								<li><a href="#" class="footer__link">Local Guides</a></li>
+								<li><a href="#" class="footer__link">Make Friends</a></li>
+							</ul>
+						</div>
+
+						<div class="footer__column">
+							<div class="footer__title">Meetup</div>
+							<ul class="footer__list">
+								<li><a href="#" class="footer__link">About</a></li>
+								<li><a href="#" class="footer__link">Blog</a></li>
+								<li><a href="#" class="footer__link">Meetup Pro</a></li>
+								<li><a href="#" class="footer__link">Careers</a></li>
+								<li><a href="#" class="footer__link">Apps</a></li>
+								<li><a href="#" class="footer__link">Podcast</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer__bottom">
+						<p class="footer__follow">Follow us</p>
+						<div class="footer__social">
+							<a href="" class="footer__icon footer__icon--facebook">
+								<svg
+									width="25.000000"
+									height="25.000000"
+									viewBox="0 0 25 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+								>
+									<desc>Created with Pixso.</desc>
+									<defs />
+									<path
+										id="Vector"
+										d="M25 12.57C25 5.63 19.4 0 12.5 0C5.59 0 0 5.63 0 12.57C0 18.85 4.57 24.05 10.54 25L10.54 16.21L7.37 16.21L7.37 12.57L10.54 12.57L10.54 9.8C10.54 6.65 12.41 4.91 15.26 4.91C16.63 4.91 18.06 5.15 18.06 5.15L18.06 8.25L16.49 8.25C14.93 8.25 14.45 9.22 14.45 10.21L14.45 12.57L17.91 12.57L17.36 16.21L14.45 16.21L14.45 25C20.42 24.05 25 18.85 25 12.57Z"
+										fill="#D9D9D9"
+										fill-opacity="1.000000"
+										fill-rule="evenodd"
+									/>
+								</svg>
+							</a>
+							<a href="" class="footer__icon footer__icon--X">
+								<svg
+									width="25.000000"
+									height="20.317383"
+									viewBox="0 0 25 20.3174"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+								>
+									<desc>Created with Pixso.</desc>
+									<defs />
+									<path
+										id="Vector"
+										d="M25 2.4C24.08 2.81 23.09 3.08 22.05 3.21C23.11 2.57 23.92 1.57 24.3 0.37C23.31 0.96 22.22 1.38 21.05 1.62C20.11 0.62 18.78 0 17.3 0C14.47 0 12.17 2.29 12.17 5.12C12.17 5.53 12.22 5.92 12.31 6.29C8.04 6.08 4.27 4.04 1.74 0.93C1.29 1.69 1.04 2.57 1.04 3.51C1.04 5.29 1.95 6.86 3.32 7.78C2.48 7.75 1.69 7.52 1 7.14C1 7.16 1 7.18 1 7.2C1 9.69 2.77 11.76 5.11 12.23C4.68 12.35 4.23 12.41 3.76 12.41C3.43 12.41 3.11 12.38 2.8 12.32C3.45 14.36 5.34 15.84 7.59 15.88C5.83 17.26 3.62 18.08 1.22 18.08C0.8 18.08 0.4 18.05 0 18.01C2.26 19.46 4.96 20.31 7.86 20.31C17.29 20.31 22.45 12.5 22.45 5.72C22.45 5.5 22.45 5.28 22.44 5.06C23.44 4.33 24.31 3.43 25 2.4Z"
+										fill="#D9D9D9"
+										fill-opacity="1.000000"
+										fill-rule="nonzero"
+									/>
+								</svg>
+							</a>
+							<a href="" class="footer__icon footer__icon--youtube">
+								<svg
+									width="25.000000"
+									height="19.250000"
+									viewBox="0 0 25 19.25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+								>
+									<desc>Created with Pixso.</desc>
+									<defs />
+									<path
+										id="Vector"
+										d="M12.5 0C0.21 0 0 1.09 0 9.62C0 18.15 0.21 19.25 12.5 19.25C24.78 19.25 25 18.15 25 9.62C25 1.09 24.78 0 12.5 0ZM16.5 10.04L10.89 12.66C10.4 12.88 10 12.63 10 12.09L10 7.15C10 6.61 10.4 6.36 10.89 6.58L16.5 9.2C16.99 9.43 16.99 9.81 16.5 10.04Z"
+										fill="#D9D9D9"
+										fill-opacity="1.000000"
+										fill-rule="nonzero"
+									/>
+								</svg>
+							</a>
+							<a href="" class="footer__icon footer__icon--instagram"
+								><svg
+									width="22.500000"
+									height="22.500000"
+									viewBox="0 0 22.5 22.5"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+								>
+									<desc>Created with Pixso.</desc>
+									<defs />
+									<path
+										id="Vector"
+										d="M20.4 15.79C20.35 16.89 20.17 17.48 20.02 17.88C19.81 18.4 19.57 18.78 19.17 19.17C18.78 19.57 18.4 19.81 17.88 20.01C17.48 20.17 16.88 20.35 15.79 20.4C14.6 20.46 14.25 20.47 11.24 20.47C8.24 20.47 7.88 20.46 6.7 20.4C5.6 20.35 5.01 20.17 4.61 20.01C4.08 19.81 3.71 19.57 3.32 19.17C2.92 18.78 2.68 18.4 2.47 17.88C2.32 17.48 2.14 16.89 2.09 15.79C2.03 14.6 2.02 14.25 2.02 11.25C2.02 8.24 2.03 7.88 2.09 6.7C2.14 5.6 2.32 5.01 2.47 4.61C2.68 4.08 2.92 3.71 3.32 3.32C3.71 2.92 4.08 2.68 4.61 2.47C5.01 2.32 5.6 2.14 6.7 2.09C7.88 2.03 8.24 2.02 11.24 2.02C14.25 2.02 14.6 2.03 15.79 2.09C16.88 2.14 17.48 2.32 17.88 2.47C18.4 2.68 18.78 2.92 19.17 3.32C19.57 3.71 19.81 4.08 20.02 4.61C20.17 5.01 20.35 5.6 20.4 6.7C20.46 7.88 20.47 8.24 20.47 11.25C20.47 14.25 20.46 14.6 20.4 15.79ZM22.43 6.61C22.37 5.41 22.18 4.59 21.9 3.88C21.62 3.14 21.23 2.51 20.61 1.88C19.98 1.26 19.35 0.87 18.61 0.58C17.9 0.31 17.08 0.12 15.88 0.06C14.68 0.01 14.3 0 11.24 0C8.19 0 7.8 0.01 6.6 0.06C5.41 0.12 4.59 0.31 3.87 0.58C3.14 0.87 2.51 1.26 1.88 1.88C1.26 2.51 0.87 3.14 0.59 3.88C0.31 4.59 0.12 5.41 0.06 6.61C0.01 7.81 0 8.19 0 11.25C0 14.3 0.01 14.68 0.06 15.88C0.12 17.08 0.31 17.9 0.59 18.61C0.87 19.35 1.26 19.98 1.88 20.61C2.51 21.23 3.14 21.62 3.87 21.9C4.59 22.18 5.41 22.37 6.6 22.43C7.8 22.48 8.19 22.5 11.24 22.5C14.3 22.5 14.68 22.48 15.88 22.43C17.08 22.37 17.9 22.18 18.61 21.9C19.35 21.62 19.98 21.23 20.61 20.61C21.23 19.98 21.62 19.35 21.9 18.61C22.18 17.9 22.37 17.08 22.43 15.88C22.48 14.68 22.5 14.3 22.5 11.25C22.5 8.19 22.48 7.81 22.43 6.61ZM18.6 5.24C18.6 4.49 18 3.89 17.25 3.89C16.5 3.89 15.9 4.49 15.9 5.24C15.9 5.99 16.5 6.59 17.25 6.59C18 6.59 18.6 5.99 18.6 5.24ZM7.49 11.25C7.49 13.32 9.17 14.99 11.24 14.99C13.31 14.99 15 13.32 15 11.25C15 9.17 13.31 7.49 11.24 7.49C9.17 7.49 7.49 9.17 7.49 11.25ZM5.47 11.25C5.47 8.06 8.05 5.47 11.24 5.47C14.43 5.47 17.02 8.06 17.02 11.25C17.02 14.43 14.43 17.02 11.24 17.02C8.05 17.02 5.47 14.43 5.47 11.25Z"
+										fill="#D9D9D9"
+										fill-opacity="1.000000"
+										fill-rule="evenodd"
+									/>
+								</svg>
+							</a>
+							<a href="" class="footer__icon footer__icon--tiktok">
+								<svg
+									width="14.171875"
+									height="16.250000"
+									viewBox="0 0 14.1719 16.25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+								>
+									<desc>Created with Pixso.</desc>
+									<defs />
+									<path
+										id="Vector"
+										d="M12.05 3.25C11.17 2.68 10.54 1.77 10.35 0.71C10.3 0.47 10.28 0.24 10.28 0L7.48 0L7.48 11.19C7.43 12.45 6.4 13.45 5.13 13.45C4.74 13.45 4.37 13.36 4.05 13.18C3.3 12.79 2.79 12.01 2.79 11.11C2.79 9.81 3.84 8.76 5.14 8.76C5.38 8.76 5.61 8.8 5.83 8.87L5.83 6.67L5.83 6.01C5.6 5.98 5.37 5.96 5.14 5.96C2.3 5.96 0 8.27 0 11.1C0 12.84 0.86 14.38 2.19 15.31C3.03 15.9 4.04 16.25 5.14 16.25C7.97 16.25 10.28 13.94 10.28 11.1L10.28 5.42C11.37 6.21 12.72 6.67 14.17 6.67L14.17 4.5L14.17 3.88C13.38 3.88 12.66 3.65 12.05 3.25Z"
+										fill="#D9D9D9"
+										fill-opacity="1.000000"
+										fill-rule="nonzero"
+									/>
+								</svg>
+							</a>
+						</div>
+						<div class="footer__apps">
+							<a href="#" class="footer__app"
+								><img src="/src/assets/images/content/googleplay.png" alt="#"
+							/></a>
+							<a href="#" class="footer__app"
+								><img src="/src/assets/images/content/appstore.png" alt="#"
+							/></a>
+						</div>
+					</div>
+
+					<div class="footer__legal">
+						<p class="footer__cop">© 2024 Meetup</p>
+						<ul class="footer__private">
+							<li>
+								<a href="#" class="footer__legal-link">Terms of Service</a>
+							</li>
+							<li>
+								<a href="#" class="footer__legal-link">Privacy Policy</a>
+							</li>
+							<li>
+								<a href="#" class="footer__legal-link"
+									>Do Not Sell or Share My Personal Data</a
+								>
+							</li>
+							<li><a href="#" class="footer__legal-link">Cookie Policy</a></li>
+							<li>
+								<a href="#" class="footer__legal-link">Help</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</footer>
 		</div>
 		<script type="module" src="/src/js/main.js"></script>

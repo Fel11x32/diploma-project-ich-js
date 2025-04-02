@@ -10,6 +10,7 @@
 		@include flex-center;
 		justify-content: space-between;
 		min-height: px-to-rem(64px);
+		max-width: 1478px;
 		padding-block: px-to-rem(8px);
 		gap: px-to-rem(16px);
 
@@ -71,23 +72,11 @@
 	font-weight: 500;
 	font-size: $font-small;
 	gap: px-to-rem(22px);
-	line-height: px-to-rem(20px);
+	line-height: lh-multiplier($font-small, 20px);
 
 	&__login {
 		&:hover {
 			text-decoration: underline;
-		}
-	}
-
-	&__signup {
-		border-radius: px-to-rem(8px);
-		padding: px-to-rem(8px) px-to-rem(16px);
-		background: $button-color;
-		color: $background-color;
-		transition: background-color 0.3s ease;
-
-		&:hover {
-			background-color: darken-color($button-color);
 		}
 	}
 

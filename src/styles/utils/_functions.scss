@@ -1,14 +1,18 @@
-@use "sass:math";
-@use "sass:color";
+@use 'sass:math';
+@use 'sass:color';
 
 @function px-to-rem($px, $base-font-size: 16px) {
-  @return #{math.div($px, $base-font-size)}rem;
+	@return #{math.div($px, $base-font-size)}rem;
 }
 
 @function lighten-color($color, $percentage) {
-  @return color.adjust($color, $lightness: $percentage);
+	@return color.adjust($color, $lightness: $percentage);
 }
 
 @function darken-color($color, $percentage: 10%) {
-  @return color.adjust($color, $lightness: -$percentage);
+	@return color.adjust($color, $lightness: -$percentage);
+}
+
+@function lh-multiplier($font-size, $line-height) {
+	@return math.div($line-height, $font-size);
 }

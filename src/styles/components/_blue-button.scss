@@ -1,0 +1,13 @@
+@use '../utils' as *;
+
+.blue-button {
+	border-radius: px-to-rem(8px);
+	padding: px-to-rem(8px) px-to-rem(16px);
+	background: $button-color;
+	color: $background-color;
+	transition: background-color 0.3s ease;
+
+	&:hover {
+		background-color: darken-color($button-color);
+	}
+}

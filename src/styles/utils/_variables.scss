@@ -1,4 +1,3 @@
-
 // Цвета
 $primary-color: #97CAD1;
 $secondary-color: #E32359;
@@ -7,7 +6,16 @@ $button-color: #00798A;
 $background-color: #fff;
 $border-color: #d9d9d9;
 $orange-button-color: #f65858;
+$footer-color: #f6f7f8;
+$gray-color: #707070;;
+$lite-gray-color: #c5c4c4;;
 
+$facebook-color: #3b5998;
+$x-color: #1da1f2;
+$youtube-color: #ff4d4d;
+$instagram-color: #e4405f;
+$tiktok-color: #69c9d0;
+ 
 // Размеры шрифтов
 $font-ultra-small: 12px;
 $font-small: 14px;
@@ -32,12 +40,4 @@ $breakpoints: (
   'md': 768px,
   'lg': 992px,
   'xl': 1200px
-);
-
-// Отступы
-$spacing-unit: 8px;
-$padding: (
-  'small': $spacing-unit,
-  'medium': $spacing-unit * 2,
-  'large': $spacing-unit * 3
 );
