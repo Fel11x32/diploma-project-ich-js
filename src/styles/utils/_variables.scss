@@ -1,27 +1,30 @@
 // Цвета
-$primary-color: #97CAD1;
-$secondary-color: #E32359;
+$primary-color: #97cad1;
+$secondary-color: #e32359;
 $text-color: #212121;
-$button-color: #00798A;
+$button-color: #00798a;
 $background-color: #fff;
 $border-color: #d9d9d9;
 $orange-button-color: #f65858;
 $footer-color: #f6f7f8;
-$gray-color: #707070;;
-$lite-gray-color: #c5c4c4;;
+$gray-color: #707070;
+$lite-gray-color: #c5c4c4;
 
 $facebook-color: #3b5998;
 $x-color: #1da1f2;
 $youtube-color: #ff4d4d;
 $instagram-color: #e4405f;
 $tiktok-color: #69c9d0;
- 
+
+$link-location-color: #97cad11f;
+
 // Размеры шрифтов
 $font-ultra-small: 12px;
 $font-small: 14px;
 $font-medium: 16px;
 $font-large: 24px;
-$h2: 36px;
+$h3: 20px;
+$h2: 28px;
 $h1: 42px;
 $h1-resp: 25px;
 
@@ -36,9 +39,9 @@ $ui-index-7: 7; //Для элементов, перекрывающих ВСЁ
 
 // Breakpoints
 $breakpoints: (
-  'xs': 423px,
-  'sm': 576px,
-  'md': 768px,
-  'lg': 992px,
-  'xl': 1200px
+	'xs': 423px,
+	'sm': 576px,
+	'md': 768px,
+	'lg': 992px,
+	'xl': 1200px,
 );

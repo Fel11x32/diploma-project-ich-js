@@ -19,3 +19,13 @@ h1 {
 		font-size: $h1-resp;
 	}
 }
+
+h2 {
+	font-size: $h2;
+	font-weight: 600;
+	line-height: lh-multiplier($h2, 36px);
+	@include responsive('md') {
+		font-size: $h3;
+		line-height: lh-multiplier($h3, 25px);
+	}
+}
