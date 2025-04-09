@@ -296,3 +296,36 @@
 		text-align: center;
 	}
 }
+
+//====================================================================================================================
+
+.cities {
+
+		&__grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(205px, 2fr));
+			gap: px-to-rem(40px);
+
+			&:not(:first-child) {
+				margin-top: px-to-rem(28px);
+			}
+
+			@include responsive('sm') {
+				gap: px-to-rem(18px);
+			}
+		}
+
+		&__card {
+			@include flex-center;
+			flex-direction: column;
+			gap: px-to-rem(24px);
+			img {
+				width: 100%;
+				max-width: 205px;
+
+				@include responsive('sm') {
+					max-width: 155px;
+				}
+			}
+		}
+}

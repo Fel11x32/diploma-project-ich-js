@@ -1,0 +1,9 @@
+@use '../utils' as *;
+
+.head {
+	&__subtitle {
+		&:not(:first-child) {
+			margin-top: px-to-rem(16px);
+		}
+	}
+}

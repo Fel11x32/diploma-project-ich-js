@@ -29,3 +29,13 @@ h2 {
 		line-height: lh-multiplier($h3, 25px);
 	}
 }
+
+h3 {
+	font-size: $h3;
+	font-weight: 600;
+	line-height: lh-multiplier($h3, 28px);
+	@include responsive('md') {
+		font-size: $font-medium;
+		line-height: lh-multiplier($font-medium, 20px);
+	}
+}
