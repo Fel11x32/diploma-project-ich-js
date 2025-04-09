@@ -137,6 +137,10 @@
 		filter: brightness(85%);
 	}
 
+	@include responsive('md') {
+		padding-bottom: 32px;
+	}
+
 	&__img {
 		object-fit: cover;
 		width: 100%;
@@ -188,5 +192,75 @@
 		display: flex;
 		align-items: center;
 		gap: px-to-rem(8px);
+	}
+}
+
+//====================================================================================================================
+
+.join {
+	&__content {
+		border-radius: 8px;
+		background-color: $secondary-background-color;
+		padding-inline: px-to-rem(56px);
+		padding-block: px-to-rem(36px);
+		@include flex-center;
+		gap: px-to-rem(75px);
+
+		@include responsive('sm') {
+			padding-block: px-to-rem(16px);
+			padding-inline: px-to-rem(16px);
+		}
+	}
+
+	&__info {
+		flex: 2 1 0%;
+		display: flex;
+		flex-direction: column;
+		gap: px-to-rem(16px);
+	}
+
+	&__img {
+		display: none;
+		align-self: center;
+		@include responsive('lg') {
+			display: inline-block;
+		}
+	}
+
+	&__text {
+		line-height: lh-multiplier($font-medium, 24px);
+		@include responsive('sm') {
+			font-size: $font-ultra-small;
+			line-height: lh-multiplier($font-ultra-small, 24px);
+		}
+	}
+
+	&__sing-up {
+		padding-block: px-to-rem(8px);
+		padding-inline: px-to-rem(66px);
+		background-color: $secondary-color;
+		color: $background-color;
+		border-radius: 8px;
+		font-weight: 500;
+		line-height: lh-multiplier($font-medium, 24px);
+		transition: background-color 0.3s ease;
+		align-self: start;
+
+		&:hover {
+			background-color: darken-color($secondary-color);
+		}
+		@include responsive('lg') {
+			align-self: center;
+		}
+	}
+
+	&__desktop-img {
+		img {
+			flex: 1 1 0%;
+			width: 100%;
+		}
+		@include responsive('lg') {
+			display: none;
+		}
 	}
 }
