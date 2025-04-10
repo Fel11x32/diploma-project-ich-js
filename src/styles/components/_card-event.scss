@@ -1,0 +1,93 @@
+@use '../utils' as *;
+
+.card-event {
+	display: flex;
+	gap: 12px;
+	margin-top: px-to-rem(56px);
+	padding-block: px-to-rem(16px);
+	position: relative;
+
+	&:hover &__wrapper-img {
+		rotate: 1deg;
+		scale: 1.03;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background-color: $border-color;
+	}
+	&__wrapper-img {
+		position: relative;
+		width: 100%;
+		max-width: 160px;
+
+		transition: all 0.3s ease;
+
+		@include responsive('xs') {
+			max-width: 100px;
+		}
+
+		img {
+			border-radius: 8px;
+		}
+		span {
+			position: absolute;
+			top: 8px;
+			left: 8px;
+
+			padding: 2px;
+			border-radius: 4px;
+			color: $gray-color;
+			background-color: $background-color;
+
+			@include responsive('xs') {
+				display: none;
+			}
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	&__date {
+		font-size: $font-small;
+		font-weight: 500;
+		line-height: lh-multiplier($font-small, 20px);
+		color: $gold-color;
+
+		@include responsive('xs') {
+			font-size: 9px;
+			line-height: lh-multiplier(9px, 12px);
+		}
+	}
+
+	&__title {
+		font-size: $font-medium;
+		font-weight: 500;
+		line-height: lh-multiplier($font-medium, 24px);
+
+		@include responsive('xs') {
+			font-size: 10px;
+			line-height: lh-multiplier(10px, 15px);
+		}
+	}
+
+	&__subtitle {
+		font-size: $font-small;
+		font-weight: 500;
+		line-height: lh-multiplier($font-small, 20px);
+		color: $gray-color;
+
+		@include responsive('xs') {
+			font-size: 9px;
+			line-height: lh-multiplier(12px, 9px);
+		}
+	}
+}
