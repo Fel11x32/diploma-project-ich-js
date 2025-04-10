@@ -24,17 +24,6 @@ body {
 	}
 }
 
-.page {
-	&__events {
-		margin-top: px-to-rem(24px);
-	}
-	&__join {
-		margin-top: px-to-rem(40px);
-	}
-	&__categories {
-		margin-top: px-to-rem(64px);
-	}
-	&__cities {
-		margin-top: px-to-rem(64px);
-	}
+[class*='page__'] {
+	padding-block: px-to-rem(32px);
 }

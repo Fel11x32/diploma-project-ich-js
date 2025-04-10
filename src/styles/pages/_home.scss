@@ -300,32 +300,103 @@
 //====================================================================================================================
 
 .cities {
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(205px, 2fr));
+		gap: px-to-rem(40px);
 
-		&__grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(205px, 2fr));
-			gap: px-to-rem(40px);
+		&:not(:first-child) {
+			margin-top: px-to-rem(28px);
+		}
 
-			&:not(:first-child) {
-				margin-top: px-to-rem(28px);
-			}
+		@include responsive('sm') {
+			gap: px-to-rem(18px);
+		}
+	}
+
+	&__card {
+		@include flex-center;
+		flex-direction: column;
+		gap: px-to-rem(24px);
+		img {
+			width: 100%;
+			max-width: 205px;
 
 			@include responsive('sm') {
-				gap: px-to-rem(18px);
+				max-width: 155px;
 			}
 		}
+	}
+}
 
-		&__card {
-			@include flex-center;
-			flex-direction: column;
-			gap: px-to-rem(24px);
-			img {
-				width: 100%;
-				max-width: 205px;
+//====================================================================================================================
 
-				@include responsive('sm') {
-					max-width: 155px;
-				}
-			}
+.works-info {
+	&__cards {
+		@include flex-center;
+		gap: px-to-rem(32px);
+		margin-top: px-to-rem(24px);
+		align-items: stretch;
+		@include responsive('lg') {
+			flex-wrap: wrap;
 		}
+	}
+}
+
+.works-card {
+	display: flex;
+	align-items: flex-start;
+	gap: px-to-rem(24px);
+	flex: 1 1 50%;
+
+	background-color: $secondary-background-color;
+
+	padding: px-to-rem(32px) px-to-rem(112px) px-to-rem(24px) px-to-rem(24px);
+	border-radius: px-to-rem(8px);
+	transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+	&:hover {
+		box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+		transform: translateY(-4px);
+
+		.works-card__icon {
+			transform: rotate(360deg);
+		}
+
+		.works-card__link {
+			transform: translateX(4px);
+			text-decoration: underline;
+		}
+	}
+
+	@include responsive('sm') {
+		padding: px-to-rem(16px);
+	}
+	&__icon {
+		transition: transform 0.6s ease;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: px-to-rem(16px);
+	}
+
+	&__text {
+		@include responsive('sm') {
+			font-size: $font-ultra-small;
+			line-height: lh-multiplier($font-ultra-small, 15px);
+		}
+	}
+
+	&__link {
+		color: $button-color;
+		font-weight: 500;
+		transition: transform 0.3s ease, text-decoration 0.3s ease;
+		text-decoration: none;
+		@include responsive('sm') {
+			font-size: $font-ultra-small;
+			line-height: lh-multiplier($font-ultra-small, 15px);
+		}
+	}
 }

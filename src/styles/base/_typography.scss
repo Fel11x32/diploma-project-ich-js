@@ -5,6 +5,7 @@
 body {
 	font-family: 'Roboto';
 	font-size: px-to-rem(16px);
+	line-height: lh-multiplier($font-medium, 24px);
 	color: $text-color;
 }
 
