@@ -392,11 +392,72 @@
 	&__link {
 		color: $button-color;
 		font-weight: 500;
-		transition: transform 0.3s ease, text-decoration 0.3s ease;
+		transition: all 0.3s ease;
 		text-decoration: none;
+		align-self: start;
+
 		@include responsive('sm') {
 			font-size: $font-ultra-small;
 			line-height: lh-multiplier($font-ultra-small, 15px);
+		}
+		&:hover {
+			color: darken-color($button-color, 8%);
+		}
+	}
+}
+
+//====================================================================================================================
+
+.friendships {
+	&__cards {
+		margin-top: px-to-rem(28px);
+		display: flex;
+		gap: px-to-rem(32px);
+		@include responsive('lg') {
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
+.card-friendship {
+	flex: 1 1 33%;
+	@include responsive('lg') {
+		flex: 1 1 50%;
+		max-width: 376px;
+	}
+	&__img {
+		width: 100%;
+		object-fit: cover;
+		border-radius: 8px;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		gap: px-to-rem(16px);
+	}
+
+	&__info {
+		color: $gray-color;
+		@include responsive('sm') {
+			font-size: $font-ultra-small;
+			line-height: lh-multiplier($font-ultra-small, 24px);
+		}
+	}
+
+	&__link {
+		color: $button-color;
+		align-self: start;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		@include responsive('sm') {
+			font-size: $font-ultra-small;
+			line-height: lh-multiplier($font-ultra-small, 24px);
 		}
 	}
 }

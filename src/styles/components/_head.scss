@@ -1,7 +1,10 @@
 @use '../utils' as *;
 
 .head {
+	max-width: 900px;
 	&__subtitle {
+		color: $gray-color;
+
 		&:not(:first-child) {
 			margin-top: px-to-rem(16px);
 		}
